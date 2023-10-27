@@ -60,7 +60,7 @@ Quarter To: When the minute count is 45, the phrase "quarter to" is used, along 
 
 Half Past: When the minute count is 30, "half past" is used, followed by the current hour, to indicate the halfway point in the hour.
 
-### Chinese
+### <u>Chinese</u>
 In Chinese, the fundamental structure for conveying the time is as follows:
 
 "Now" + "is" + "morning (6:00-11:59)" / "noon(12:00-12:59)" / "afternoon (1:00-5:59)" / "dusk (6:00-6:59)" / "evening (7:00-24:59)" / "before dawn (1:00-5:59)" + "hours" + "minutes"
