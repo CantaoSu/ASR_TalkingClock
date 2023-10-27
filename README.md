@@ -5,8 +5,8 @@
 ## How to run🐱:
 
 ## Supported languages🐇:
--English
--Chinese
+-English//
+-Chinese//
 -Korean
 
 ## Lingusitic rules for telling time🐹:
