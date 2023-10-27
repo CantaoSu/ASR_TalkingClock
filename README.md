@@ -22,7 +22,7 @@ In this format, "hour" represents the current hour, and "minutes" correspond to 
 The time is typically presented in the 12-hour clock format.
 
 
-Special cases:
+**Special cases:**
 
 Midnight: When the clock strikes 12:00 at midnight, it's referred to as "twelve midnight" rather than 12:00 am.
 
@@ -40,7 +40,7 @@ In Chinese, the fundamental structure for conveying the time is as follows:
 "Now" + "is" + "morning (6:00-11:59)" / "noon(12:00-12:59)" / "afternoon (1:00-5:59)" / "dusk (6:00-6:59)" / "evening (7:00-24:59)" / "before dawn (1:00-5:59)" + "hours" + "minutes"
 
 
-Special cases:
+**Special cases:**
 
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
 
@@ -51,7 +51,7 @@ In Korean, the format structure is as follows (in Korean, verb always appear at 
 "Now" + "morning (6:00-11:59)" / "afternoon (12:00-17:59)" / "evening (18:00-23:59)" + "hour" + "minutes" + "is"
 
 
-Special cases:
+**Special cases:**
 
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
 
