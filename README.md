@@ -1,22 +1,19 @@
-# SPEAKING CLOCK🐣🐻
-
-## Description🐕:
-# Talking Clock - Multi-lingual Voice Timekeeper
-
+# Multi-lingual Talking Clock & ALARM🐣🐻
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/release/python-31013/)
+## Description🐕:
 
-Welcome to the Talking Clock project! This is a multi-functional voice-based timekeeping system built using Python. It provides round-the-clock time services, featuring voice time announcements in English, Chinese, and Korean with options for both male and female voices. It also includes timezone selection, automatic adjustments for daylight saving time, multiple alarm management, and to-do list capabilities.
+Welcome to the Talking Clock project! This is a multi-functional voice-based timekeeping system built using Python. It provides round-the-clock time services, featuring voice time announcements in English, Chinese, and Korean, with options for both male and female voices. It also includes timezone selection, automatic detection and reminder for daylight saving time adjustment, multiple alarm management, and to-do list capabilities.
 
-## Key Features
+### Key Features
 - Three languages: English, Chinese, and Korean
 - Two voice genders: Male and Female
-- Timezone selection: Switch between major city timezones worldwide
-- Daylight Saving Time: Automatically adjust for local DST transitions
+- Timezone selection: Switch between three timezones worldwide (the Netherlands, China and the USA)
+- Daylight Saving Time: Automatical detection and reminder one day before DST transitions
 - Multiple alarms: Manage important reminders and schedules
 - To-Do List: Easily add and manage tasks and to-dos
 
-## Tech Stack
+### Tech Stack
 Talking Clock leverages several Python libraries and frameworks, including:
 - tkinter: For creating a user-friendly graphical user interface
 - pygame: For playing voice time announcements
@@ -24,16 +21,11 @@ Talking Clock leverages several Python libraries and frameworks, including:
 - pydub: For audio format conversion and processing
 - And other libraries to enhance program functionality
 
-## Installation and Usage
-You can find detailed installation and usage instructions in our [Wiki](https://github.com/yourusername/your-repo/wiki).
+### Contributions
+We welcome contributions in all forms! If you'd like to get involved in the development or improvement of the project, please contact us on GitHub.
 
-## Contributions
-We welcome contributions in all forms! If you'd like to get involved in the development or improvement of the project, please check our [Contribution Guidelines](https://github.com/yourusername/your-repo/blob/main/CONTRIBUTING.md).
-
-## License
-The Talking Clock project is licensed under the MIT License. For more details, please review the [License file](https://github.com/yourusername/your-repo/blob/main/LICENSE).
-
-Let's work together to create a better voice-based timekeeping system!
+### License
+The Talking Clock project is licensed under the MIT License. For more details, please review the [License file](https://github.com/CantaoSu/Talking_Clock/blob/main/LICENSE).
 
 
 ## How to run🐱:
