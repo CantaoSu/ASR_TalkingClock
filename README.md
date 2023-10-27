@@ -5,20 +5,18 @@
 ## How to run🐱:
 
 ## Supported languages🐇:
--English
-
--Chinese
-
+-English  
+-Chinese  
 -Korean
 
 ## Lingusitic rules for telling time🐹:
 ### English
-In English, the basic format for telling time is as follows:
-"It's" + "hour" + "minutes" + "am/pm"
-In this format, "hour" represents the current hour, and "minutes" correspond to the current number of minutes. "Am" is used for time from midnight until noon, indicating the morning hours, while "pm" is used for time from noon until midnight, denoting the afternoon and evening.
+In English, the basic format for telling time is as follows:  
+"It's" + "hour" + "minutes" + "am/pm"  
+In this format, "hour" represents the current hour, and "minutes" correspond to the current number of minutes. "Am" is used for time from midnight until noon, indicating the morning hours, while "pm" is used for time from noon until midnight, denoting the afternoon and evening.  
 The time is typically presented in the 12-hour clock format.
 
-Special cases:
+Special cases:  
 Midnight: When the clock strikes 12:00 at midnight, it's referred to as "twelve midnight" rather than 12:00 am.
 Noon: When the clock strikes 12:00 at noon, it's called "twelve noon" instead of 12:00 pm.
 Quarter Past: When the minute count is 15, the expression "quarter past" is used instead of specifying the exact number of minutes past the hour.
