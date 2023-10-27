@@ -1,15 +1,15 @@
-# SPEAKING CLOCK
+# SPEAKING CLOCK🐣🐻
 
-## Description:
+## Description🐕:
 
-## How to run:
+## How to run🐱:
 
-## Supported languages:
+## Supported languages🐇:
 -English
 -Chinese
 -Korean
 
-## Lingusitic rules for telling time:
+## Lingusitic rules for telling time🐹:
 ### English
 In English, the basic format for telling time is as follows:
 "It's" + "hour" + "minutes" + "am/pm"
@@ -38,5 +38,5 @@ In Korean, the format structure is as follows (in Korean, verb always appear at 
 Special cases:
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
 
-## GDPR Compliance
+## GDPR Compliance🐳
 
