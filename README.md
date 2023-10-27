@@ -4,7 +4,7 @@
 # Talking Clock - Multi-lingual Voice Timekeeper
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
+[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/downloads/release/python-31013/)
 
 Welcome to the Talking Clock project! This is a multi-functional voice-based timekeeping system built using Python. It provides round-the-clock time services, featuring voice time announcements in English, Chinese, and Korean with options for both male and female voices. It also includes timezone selection, automatic adjustments for daylight saving time, multiple alarm management, and to-do list capabilities.
 
