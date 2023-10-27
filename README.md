@@ -83,3 +83,12 @@ When the minute part is 0, the minutes are omitted, and only the hour part is me
 
 ## GDPR Compliance🐳
 
+This project complies with the General Data Protection Regulation (GDPR) standards for data privacy and protection. We take user data privacy seriously and have implemented measures to ensure that personal data is handled securely and in accordance with GDPR guidelines.
+
+- User data: We only access the current time on the user's computer with their permission. No other user information is collected or stored.
+- Transparency: We are committed to providing clear information about data usage and privacy practices.
+
+If you have any concerns about data privacy or would like to request the removal of any specific data, please [contact us](mailto:cantaosu0109@gmail.com) for assistance.
+
+Please note that this project is for educational purposes and may not include advanced GDPR compliance features that would be necessary for production applications. For more information on your rights and GDPR compliance, please refer to the [GDPR official website](https://gdpr.eu/).
+
