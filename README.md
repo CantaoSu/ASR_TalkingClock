@@ -37,7 +37,7 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 
 `Step 4`:Execute the command `pip install -r Requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
 
-`Step 5`:Execute the command `python basic_clock.py` to run our talking clock! Good luck!
+`Step 5`:Execute the command `python basic_clock.py` to run our talking clock! **Good luck**
 
 
 ## User Manual🐨
@@ -56,15 +56,15 @@ The time is typically presented in the 12-hour clock format.
 
 **Special cases:**
 
-Midnight: When the clock strikes 12:00 at midnight, it's referred to as "twelve midnight" rather than 12:00 am.
+ `Midnight `: When the clock strikes 12:00 at midnight, it's referred to as "twelve midnight" rather than 12:00 am.
 
-Noon: When the clock strikes 12:00 at noon, it's called "twelve noon" instead of 12:00 pm.
+ `Noon `: When the clock strikes 12:00 at noon, it's called "twelve noon" instead of 12:00 pm.
 
-Quarter Past: When the minute count is 15, the expression "quarter past" is used instead of specifying the exact number of minutes past the hour.
+ `Quarter Past `: When the minute count is 15, the expression "one quarter past" is used instead of specifying the exact number of minutes past the hour.
 
-Quarter To: When the minute count is 45, the phrase "quarter to" is used, along with the subsequent hour, to indicate that the time is nearing the next hour.
+ `Quarter To `: When the minute count is 45, the expression "one quarter to" is used, along with the subsequent hour, to indicate that the time is nearing the next hour.
 
-Half Past: When the minute count is 30, "half past" is used, followed by the current hour, to indicate the halfway point in the hour.
+ `Half Past `: When the minute count is 30, "half past" is used, followed by the current hour, to indicate the halfway point in the hour.
 
 ### <u>Chinese</u>
 In Chinese, the fundamental structure for conveying the time is as follows:
