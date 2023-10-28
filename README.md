@@ -29,13 +29,13 @@ Before you begin, make sure you have already installed 'Python 3.9' or a higher 
 
 ## Installation🐱
 
-'Step 1':Click on the green `Code` button at the top of the repository, and then select `Download ZIP`.
+`Step 1`:Click on the green `Code` button at the top of the repository, and then select `Download ZIP`.
 
-'Step 2':Extract the contents of the downloaded ZIP file to your desired installation location on your computer.
+`Step 2`:Extract the contents of the downloaded ZIP file to your desired installation location on your computer.
 
-'Step 3':Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file.
+`Step 3`:Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file.
 
-'Step 4':Execute the command `pip install -r requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
+`Step 4`:Execute the command `pip install -r requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
 
 
 ## User Manual🐨
