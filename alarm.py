@@ -28,7 +28,7 @@ class AlarmFunction:
             current_datetime = datetime.datetime.now()
             if current_datetime >= trigger_datetime:
                 break
-            time.sleep(20)
+            time.sleep(10)
 
         if todo_message:
             self.sound_alarm(todo_message)
