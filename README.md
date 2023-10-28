@@ -37,7 +37,7 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 
 `Step 4`:Execute the command `pip install -r Requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
 
-`Step 5`:Execute the command `python basic_clock.py` to run our talking clock! 
+`Step 5`:Execute the command `python Talking_Clock.py` to run our talking clock! 
 
 
 
@@ -57,7 +57,7 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 2. Make sure you have installed the required Python resource packages.
 
 ### Daylight Saving Time Reminder
-- When you run the `basic_clock.py` file, a popup window will appear, asking for your computer's time (to provide the daylight saving time reminder). You can choose "Yes" or "No" to indicate your consent.
+- When you run the `Talking_Clock.py` file, a popup window will appear, asking for your computer's time (to provide the daylight saving time reminder). You can choose "Yes" or "No" to indicate your consent.
 - In the main interface, you'll see the Time Window displaying the current time in your location.
 - Below the Time Window is the Daylight Saving Time Reminder Window, which will display text reminders only one day before the transition to daylight saving time.
 
