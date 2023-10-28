@@ -19,8 +19,7 @@ from alarm import AlarmFunction
 The following contains the defined functions for the basic functions of the clock
 """
 
-# to change the timezone
-def change_timezone(country):
+def change_timezone(country): 
     country = time_zones.get()
     now = datetime.datetime.now()
     if country == "America":
@@ -36,7 +35,7 @@ def change_timezone(country):
         ny_tz = pytz.timezone("Asia/Seoul")
         ny_time = now.astimezone(ny_tz)
     return ny_time
-
+    
 # to show the consent form message box
 def show_consent_form():
     global consent_given
@@ -338,7 +337,7 @@ def play_audio_for_language(selected_language):
 time_zones = ttk.Combobox(root, values=("Local Time", "America", "Korea", "China", "Netherlands"),
                           font=("Time New Roman", 10), width=25)
 time_zones.set("Local Time")
-time_zones.bind("<<ComboboxSelected>>", )
+time_zones.bind("<<ComboboxSelected>>",change_timezone)
 time_zones.pack()
 
 consent_given = False
