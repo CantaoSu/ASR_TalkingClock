@@ -43,11 +43,11 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 ## User Manual🐨
 
 ## Supported languages🐇
--English
+- English
 
--Chinese
+- Chinese
 
--Korean
+- Korean
 
 ## Lingusitic rules for telling time🐹:
 ### English
@@ -93,24 +93,30 @@ In Korean, the format structure is as follows (in Korean, verb always appear at 
 
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
 
-### Team Organization and Member Contributions🐧
-`Ziyun Zhang`
+## Team Organization🐧
+### Project Workflow
 
-Participate in the discussion of the entire program design, and be responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
+### Member Contributions(in alphabetical order)
 
-`Yinqiu Wang`
-
-Participate in discussion of the overall team project design and architecture.Responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation and corresponding GUI functionality implementation.
-
-`Yanhua Liao`
-
-Participate in discussion of the overall team project design and architecture. First of all, I am mainly responsible for the recording of Chinese and English female voices, and then I am responsible for the code writing of Korean and Chinese language sections, as well as the code writing of the gender change option section.
+`Cantao Su`
 
 `Weixi Lai`
 
 Participated in the discussion of the entire program design; responsible for crafting the README.md and requirements.txt files; undertaken the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls.
 
-`Cantao Su`
+`Yanhua Liao`
+
+Participate in discussion of the overall team project design and architecture. First of all, I am mainly responsible for the recording of Chinese and English female voices, and then I am responsible for the code writing of Korean and Chinese language sections, as well as the code writing of the gender change option section.
+
+`Yinqiu Wang`
+
+Participate in discussion of the overall team project design and architecture.Responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation and corresponding GUI functionality implementation.
+
+`Ziyun Zhang`
+
+Participate in the discussion of the entire program design, and be responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
+
+## Technical Documentation🐰
 
 
 ## GDPR Compliance🐳
