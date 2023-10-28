@@ -21,16 +21,25 @@ Talking Clock leverages several Python libraries and frameworks, including:
 - pydub: For audio format conversion and processing
 - And other libraries to enhance program functionality
 
-### Contributions
-We welcome contributions in all forms! If you'd like to get involved in the development or improvement of the project, please contact us on GitHub.
-
 ### License
 The Talking Clock project is licensed under the MIT License. For more details, please review the [License file](https://github.com/CantaoSu/Talking_Clock/blob/main/LICENSE).
 
+## Before Installation🐲
+Before you begin, make sure you have already installed 'Python 3.9' or a higher version, which can be downloaded from the official Python website(https://www.python.org/downloads/).
 
-## How to run🐱:
+## Installation🐱
+Step 1:Click on the green 'Code' button at the top of the repository, and then select 'Download ZIP'.
 
-## Supported languages🐇:
+Step 2:Extract the contents of the downloaded ZIP file to your desired installation location on your computer.
+
+Step 3:Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file.
+
+Step 4:Execute the command 'pip install -r requirements.txt' to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
+
+
+## User Manual🐨
+
+## Supported languages🐇
 -English
 
 -Chinese
@@ -80,6 +89,23 @@ In Korean, the format structure is as follows (in Korean, verb always appear at 
 **Special cases:**
 
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
+
+### Team Organization and Member Contributions🐧
+
+
+'Ziyun Zhang'
+Participate in the discussion of the entire program design, and be responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
+
+'Yinqiu Wang'
+Participate in discussion of the overall team project design and architecture.Responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation and corresponding GUI functionality implementation.
+
+'Yanhua Liao'
+Participate in discussion of the overall team project design and architecture. First of all, I am mainly responsible for the recording of Chinese and English female voices, and then I am responsible for the code writing of Korean and Chinese language sections, as well as the code writing of the gender change option section.
+
+'Weixi Lai'
+Participated in the discussion of the entire program design; responsible for crafting the README.md and requirements.txt files; undertaken the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls.
+
+'Cantao Su'
 
 ## GDPR Compliance🐳
 
