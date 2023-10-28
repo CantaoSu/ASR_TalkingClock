@@ -122,10 +122,7 @@ In Korean, the format structure is as follows (in Korean, verbs always appear at
 
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
 
-## Team Organization🐧
-### Project Workflow
-
-### Member Contributions (in alphabetical order)
+## Team Organization and Member Contributions🐧
 
 `Cantao Su`
 
@@ -147,7 +144,36 @@ Participate in discussion of the overall team project design and architecture. R
 
 Participate in the discussion of the entire program design, and be responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
 
-## Technical Documentation🐰
+## Technical Challenges🐰
+
+### Integration of Functionalities and Language Implementations
+- **Challenge:** The project had separate development tracks for functionality and language implementation. During the final integration, multiple issues were encountered, and significant portions of code needed to be rewritten.
+- **Solution:** Close collaboration and communication between teams were essential to overcome this challenge.
+
+### Timezone Updates
+- **Challenge:** Connecting user interface choices to timezone updates proved to be difficult. The application struggled to update the timezone based on the user's selection in the interface.
+- **Solution:** Resolving this issue required a comprehensive review of the code responsible for managing timezone selection and updates.
+
+
+### Alarm Clock Development
+- **Challenge 1:** After implementing the alarm clock feature, the system experienced limitations in multitasking. The alarm clock would cause the entire system to wait, preventing other tasks, such as time updates or alarm list management, from running simultaneously.
+- **Solution:** Leveraging the "threading" library to run the alarm clock in the background without blocking other operations helped address this challenge.
+
+- **Challenge 2:** Debugging the code revealed situations where alarms were successfully set and added to the list in the GUI. However, when the alarm time arrived, it did not trigger the announcement. The problem was traced to a variable being restricted to a local scope.
+- **Solution:** Changing the variable to a global scope resolved this issue, allowing alarms to trigger correctly.
+
+- **Challenge 3:** The addition of a "to-do" feature alongside alarm creation was complex. Issues occurred where users could input text, but the "Confirm" button disappeared or the system played default tones instead of the user's input.
+- **Solution:** Enabling and disabling the text input box based on the user's selection was a solution to ensure smoother operation.
+
+These challenges, while demanding, were effectively addressed through teamwork, thorough code inspection, and the use of Python libraries and modules to enhance the application's functionality. 
+
+However, there are still issues unsolved due to time limit:
+### Language Announcements
+- **Challenge:** Although the code logic for language-based time announcements appeared straightforward, issues arose during execution. The application looped through all audio files before making the correct language selection.
+
+- **Challenge:** Misalignment between the time announcement and playback modules occurred. Different team members developed these modules separately, leading to issues with parameter compatibility.
+
+- **Challenge:** Ensuring a user-friendly interface where buttons provide visual feedback required special consideration. While the buttons changed color to indicate success, the system still accepted input for the next announcement during the current one.
 
 
 ## GDPR Compliance🐳
