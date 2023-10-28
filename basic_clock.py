@@ -11,6 +11,9 @@ from scipy.io import wavfile
 from pydub.playback import play
 from pydub import AudioSegment
 import pygame
+import threading
+import pyttsx3
+from alarm import AlarmFunction
 
 #change the timezone
 def change_timezone(country): 
@@ -332,5 +335,117 @@ gender_dropdown.pack(pady=5)
 
 language_button = tk.Button(root, text="Play", command=lambda: play_audio_for_language(language_var.get()), bg="black", fg="grey", font=("Times New Roman", 15, "bold"))
 language_button.pack(pady=10)
+
+#Alarm Clock Interface Display
+def open_alarm_window():
+    global alarm_window
+    alarm_window = tk.Toplevel(root)
+    alarm_window.title("Alarm Clock")
+    alarm_window.geometry("400x300") 
+    
+    create_button = tk.Button(alarm_window, text="Create New Alarm", command=create_new_alarm)
+    create_button.pack()
+
+alarms = []
+alarm_function = AlarmFunction()
+
+def create_new_alarm():
+    # create a new alarm
+    new_alarm_window = tk.Toplevel(alarm_window)
+    new_alarm_window.title("New Alarm")
+    new_alarm_window.geometry("400x300") 
+
+    title_label = tk.Label(new_alarm_window, text="Please choose your alarm time:")
+    title_label.pack()
+
+    # Select the hour and minute and Set To-Do
+    hours = list(range(24))
+    minutes = list(range(60))
+
+    hour_label = tk.Label(new_alarm_window, text="Hour:")
+    hour_label.pack()
+    hour_combo = ttk.Combobox(new_alarm_window, values=hours)
+    hour_combo.pack()
+
+    minute_label = tk.Label(new_alarm_window, text="Minute:")
+    minute_label.pack()
+    minute_combo = ttk.Combobox(new_alarm_window, values=minutes)
+    minute_combo.pack()
+    
+    is_todo_var = tk.BooleanVar()
+    is_todo_checkbox = tk.Checkbutton(new_alarm_window, text="Set as To-Do", variable=is_todo_var)
+    is_todo_checkbox.pack()
+
+    todo_entry_label = tk.Label(new_alarm_window, text="To-Do Message:")
+    todo_entry_label.pack()
+    todo_entry = tk.Entry(new_alarm_window, state="disabled") 
+    todo_entry.pack()
+
+    def toggle_todo_text():
+        if is_todo_var.get():
+            todo_entry.configure(state="normal")
+        else:
+            todo_entry.configure(state="disabled")
+
+    is_todo_checkbox.configure(command=toggle_todo_text)
+
+    def confirm_alarm():
+        #Perform Actions After Clicking 'Confirm
+        hour = int(hour_combo.get())
+        minute = int(minute_combo.get())
+        
+        # Check if it's set as a to-do
+        if is_todo_var.get():
+            todo_message = todo_entry.get()
+        else:
+            todo_message = None
+            
+        # Start Threads  
+        alarm_time = f"{hour:02d}:{minute:02d}"
+        
+        alarm_thread = threading.Thread(target=alarm_function.set_absolute_trigger, args=(hour, minute), kwargs={"todo_message": todo_message})
+        alarm_thread.start()
+        
+        list_thread = threading.Thread(target=add_to_alarm_list, args=(alarm_time,))
+        list_thread.start()
+        
+        new_alarm_window.destroy()
+
+    #Create the 'Confirm' Button
+    confirm_button = tk.Button(new_alarm_window, text="Confirm", command=confirm_alarm)
+    confirm_button.pack()
+
+def add_to_alarm_list(alarm_time):
+    #add an alarm to the list
+    alarms.append(alarm_time)
+    update_alarm_list()
+    
+def update_alarm_list():
+    #update the alarm list on the window
+    for widget in alarm_window.winfo_children():
+        widget.destroy()
+        
+    
+    #Create the 'Create New Alarm' Button
+    create_button = tk.Button(alarm_window, text="Create New Alarm", command=create_new_alarm)
+    create_button.pack()
+    
+    
+    for i, alarm_time in enumerate(alarms):
+        label_text = f"Alarm {i+1}: {alarm_time}"
+        label = tk.Label(alarm_window, text=label_text)
+        label.pack()
+
+    # delete specific alarms
+    close_button = tk.Button(alarm_window, text="Delete", command=lambda i=i: close_alarm(i))
+    close_button.pack()
+
+    def close_alarm(index):
+        alarms.pop(index)
+        update_alarm_list()
+
+# Create the 'Set Alarm' Button
+set_alarm_button = tk.Button(root, text="Set Alarm", command=open_alarm_window, bg="grey", fg="black", font=("Times New Roman", 15, "bold"))
+set_alarm_button.pack()
 
 root.mainloop()
