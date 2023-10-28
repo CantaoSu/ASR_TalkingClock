@@ -37,7 +37,7 @@ Before you begin, make sure you have already installed 'Python 3.9' or a higher 
 
 `Step 4`:Execute the command `pip install -r Requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
 
-`Step 5`:Execute the command python basic_clock.py` to run our talking clock! Good luck!
+`Step 5`:Execute the command `python basic_clock.py` to run our talking clock! Good luck!
 
 
 ## User Manual🐨
