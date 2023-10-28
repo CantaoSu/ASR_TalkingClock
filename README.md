@@ -169,11 +169,11 @@ These challenges, while demanding, were effectively addressed through teamwork, 
 
 However, there are still issues unsolved due to time limit:
 ### Language Announcements
-- **Challenge:** Although the code logic for language-based time announcements appeared straightforward, issues arose during execution. The application looped through all audio files before making the correct language selection.
+- **Language Announcement Path Logic:** The designed function logic suggests that calling the corresponding audio file should be straightforward by specifying the file path. However, in practice, the system cycles through all audio files before locating and playing the intended one, despite the absence of a loop in the code.
 
-- **Challenge:** Misalignment between the time announcement and playback modules occurred. Different team members developed these modules separately, leading to issues with parameter compatibility.
+- **Language Announcement Playback:** The project encountered challenges related to the division of responsibilities between the time announcement and playback modules. This misalignment led to significant problems, particularly concerning different parameters. Initially, the "play()" function was used for playback, but it exhibited compatibility issues on Windows systems after a Python update. Subsequent attempts to switch to "pygame" allowed only one-time playback, with permission denied issues when attempting additional plays.
 
-- **Challenge:** Ensuring a user-friendly interface where buttons provide visual feedback required special consideration. While the buttons changed color to indicate success, the system still accepted input for the next announcement during the current one.
+- **Language Announcement and GUI Interaction:**  According to design principles, the user interface should provide visual feedback by turning white when the user presses a button, indicating a successful operation before initiating the time announcement. However, during the announcement, pressing other buttons does not provide feedback on the interface. Still, the system continues to receive play instructions, resulting in sequential announcements.
 
 
 ## GDPR Compliance🐳
