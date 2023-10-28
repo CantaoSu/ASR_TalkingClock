@@ -25,7 +25,7 @@ Talking Clock leverages several Python libraries and frameworks, including:
 The Talking Clock project is licensed under the MIT License. For more details, please review the [License file](https://github.com/CantaoSu/Talking_Clock/blob/main/LICENSE).
 
 ## Before Installation🐲
-Before you begin, make sure you have already installed 'Python 3.9' or a higher version, which can be downloaded from the official Python website(https://www.python.org/downloads/).
+Before you begin, make sure you have already installed `Python 3.9` or a higher version, which can be downloaded from the official Python website(https://www.python.org/downloads/).
 
 ## Installation🐱
 
