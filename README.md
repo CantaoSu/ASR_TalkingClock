@@ -16,10 +16,10 @@ Welcome to the Talking Clock project! This is a multi-functional voice-based tim
 ### Tech Stack
 Talking Clock leverages several Python libraries and frameworks, including:
 - tkinter: For creating a user-friendly graphical user interface
-- pygame: For playing voice time announcements
+- pygame: For playing voice-time announcements
 - librosa: For audio processing and analysis
 - pydub: For audio format conversion and processing
-- And other libraries to enhance program functionality
+- And other libraries to enhance programme functionality
 
 ### License
 The Talking Clock project is licensed under the MIT License. For more details, please review the [License file](https://github.com/CantaoSu/Talking_Clock/blob/main/LICENSE).
@@ -78,13 +78,13 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 
 That's it! You're all set to make the most of our Talking Clock application. Enjoy managing your time and staying organized with ease.
 
-## Lingusitic rules for telling time🐹:
+## Linguistic Rules for Telling Time🐹:
 ### English
 In English, the basic format for telling time is as follows:
 
 `"It's" + "hour" + "minutes" + "am/pm"`
 
-In this format, "hour" represents the current hour, and "minutes" correspond to the current number of minutes. "Am" is used for time from midnight until noon, indicating the morning hours, while "pm" is used for time from noon until midnight, denoting the afternoon and evening.
+In this format, "hour" represents the current hour, and "minutes" corresponds to the current number of minutes. "Am" is used for the time from midnight until noon, indicating the morning hours, while "pm" is used for the time from noon until midnight, denoting the afternoon and evening.
 
 The time is typically presented in the 12-hour clock format.
 
@@ -102,7 +102,7 @@ The time is typically presented in the 12-hour clock format.
  `Half Past `: When the minute count is 30, "half past" is used, followed by the current hour, to indicate the halfway point in the hour.
 
 ### <u>Chinese</u>
-In Chinese, the fundamental structure for conveying the time is as follows:
+In Chinese, the fundamental structure for conveying time is as follows:
 
 `"Now" + "is" + "morning (6:00-11:59)" / "noon(12:00-12:59)" / "afternoon (1:00-5:59)" / "dusk (6:00-6:59)" / "evening (7:00-24:59)" / "before dawn (1:00-5:59)" + "hours" + "minutes"`
 
@@ -113,7 +113,7 @@ When the minute part is 0, the minutes are omitted, and only the hour part is me
 
 
 ### Korean
-In Korean, the format structure is as follows (in Korean, verb always appear at the end of a sentence):
+In Korean, the format structure is as follows (in Korean, verbs always appear at the end of a sentence):
 
 `"Now" + "morning (6:00-11:59)" / "afternoon (12:00-17:59)" / "evening (18:00-23:59)" + "hour" + "minutes" + "is"`
 
@@ -125,15 +125,15 @@ When the minute part is 0, the minutes are omitted, and only the hour part is me
 ## Team Organization🐧
 ### Project Workflow
 
-### Member Contributions(in alphabetical order)
+### Member Contributions (in alphabetical order)
 
 `Cantao Su`
 
-Participated in the overall application framework design; responsible for the daylight saving time advance reminder feature, the popup for obtaining the user's computer time; recorded audio files for the voice time announcement feature in English (male), Korean (male), and Korean (female); and adhered to Python writing conventions to refactor all code.
+Participated in the overall application framework design; was responsible for the daylight saving time advance reminder feature; the popup for obtaining the user's computer time; recorded audio files for the voice time announcement feature in English (male), Korean (male), and Korean (female); and adhered to Python writing conventions to refactor all code.
 
 `Weixi Lai`
 
-Participated in the discussion of the entire program design; responsible for crafting the README.md and requirements.txt files; undertaken the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls.
+Participated in the discussion of the entire programme design; was responsible for crafting the README.md and requirements.txt files; undertook the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls.
 
 `Yanhua Liao`
 
@@ -141,7 +141,7 @@ Participate in discussion of the overall team project design and architecture. F
 
 `Yinqiu Wang`
 
-Participate in discussion of the overall team project design and architecture.Responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation and corresponding GUI functionality implementation.
+Participate in discussion of the overall team project design and architecture. Responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation, and corresponding GUI functionality implementation.
 
 `Ziyun Zhang`
 
