@@ -140,15 +140,15 @@ Participated in the discussion of the entire programme design; was responsible f
 
 `Yanhua Liao`
 
-Participate in discussion of the overall team project design and architecture. First of all, I am mainly responsible for the recording of Chinese and English female voices, and then I am responsible for the code writing of Korean and Chinese language sections, as well as the code writing of the gender change option section.
+Participated in discussion of the overall team project design and architecture; responsible for the recording of Chinese and English female voices; responsible for the code writing of Korean and Chinese language sections, as well as the code writing of the gender change option section.
 
 `Yinqiu Wang`
 
-Participate in discussion of the overall team project design and architecture. Responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation, and corresponding GUI functionality implementation.
+Participated in discussion of the overall team project design and architecture; responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation, and corresponding GUI functionality implementation.
 
 `Ziyun Zhang`
 
-Participate in the discussion of the entire program design, and be responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
+Participated in the discussion of the entire program design; responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
 
 ## Technical Challenges🐰
 
