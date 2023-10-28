@@ -33,9 +33,10 @@ Before you begin, make sure you have already installed 'Python 3.9' or a higher 
 
 `Step 2`:Extract the contents of the downloaded ZIP file to your desired installation location on your computer.
 
-`Step 3`:Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file.
+`Step 3`:Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file（ `cd` ）.
 
-`Step 4`:Execute the command `pip install -r requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
+`Step 4`:Execute the command `pip install -r Requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
+`Step 5`:Execute the command python basic_clock.py` to run our talking clock! Good luck!
 
 
 ## User Manual🐨
