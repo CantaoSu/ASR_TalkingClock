@@ -119,38 +119,38 @@ def get_en_hour_filename_en(hr: int,m:int):
         h = "12"
     else:
         h = hr
-    return "EN_FM_h" + str(h) + '.wav'
+    return "EN_"+gender+"_h" + str(h) + '.wav'
 
 #to get minutes
 def get_en_minute_filename_en(m: int):
     hr,m = update_clock()
     if m == 15:
-        return 'EN_FM_qp.wav'
+        return 'EN_'+gender+'_qp.wav'
     elif m == 45:
-        return 'EN_FM_qt.wav'
+        return 'EN_'+gender+'_qt.wav'
     elif m == 30:
-        return 'EN_FM_hp.wav'
+        return 'EN_'+gender+'_hp.wav'
     else:
-        return 'EN_FM_m'+str(m)+".wav"
+        return 'EN_'+gender+'_m'+str(m)+".wav"
 
 #to get am/pm
 def get_en_ampm_filename_en(hr:int):
     hr,m = update_clock()
     if hr <12:
-        return "EN_FM_am.wav"
+        return "EN_"+gender+"_am.wav"
     else:
-        return "EN_FM_pm.wav"
+        return "EN_"+gender+"_pm.wav"
 
 # to speak loud in English
-def en_fm_speak_the_clock():
+def en_speak_the_clock():
     global combined_audio
-    hour, minute =  update_clock()
-    audio1 = AudioSegment.from_file('./EN_Recordings/EN_FM/EN_FM_its.wav',format ="wav")
-    audio2 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_FM/',get_en_minute_filename_en(minute)),format ="wav")
-    audio3 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_FM/',get_en_hour_filename_en(hour,minute)),format ="wav")
-    audio4 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_FM/',get_en_ampm_filename_en(hour)),format ="wav")
-    audio5 = AudioSegment.from_file("./EN_Recordings/EN_FM/EN_FM_12n.wav",format ="wav")
-    audio6 = AudioSegment.from_file("./EN_Recordings/EN_FM/EN_FM_12mn.wav",format ="wav")
+    hour, minute = update_clock()
+    audio1 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_'+gender+'/EN_'+gender+'_its.wav'),format ="wav")
+    audio2 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_'+gender+'/'+get_en_minute_filename_en(minute)),format ="wav")
+    audio3 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_'+gender+'/'+get_en_hour_filename_en(hour,minute)),format ="wav")
+    audio4 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_'+gender+'/'+get_en_ampm_filename_en(hour)),format ="wav")
+    audio5 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_'+gender+'/EN_'+gender+'_12n.wav'),format ="wav")
+    audio6 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_'+gender+'/EN_'+gender+'_12n.wav'),format ="wav")
     
     if minute != 0:
         if minute == 15 or minute == 45 or minute == 30:
@@ -176,31 +176,26 @@ Authors: YanhuaLiao & WeixiLai
 
 #to get hours
 def get_cn_hour_filename(hr):
-    hour, minute = update_clock()
+    hr,m = update_clock()
     if hr == 0:
-        return 'CN_FM_pm12.wav'
+        return '/CN_'+gender+'_pm12.wav'
     elif hr < 12:
-        return f'CN_FM_am{hr}.wav'
+        return '/CN_'+ gender + f'_am{hr}.wav'
     else:
-        return f'CN_FM_pm{hr-12}.wav'
-
-#to get minutes   
+        return '/CN_'+gender+ f'_pm{hr-12}.wav'
+    
 def get_cn_minute_filename(m: int):
+    hr,m = update_clock()
     if m != 0:
-        return f'CN_FM_m{m}.wav'
-
-from pydub import AudioSegment
+        return '/CN_'+ gender + f'_m{m}.wav'
 
 # to speak loud in Chinese
-def cn_fm_speak_the_clock():
+def cn_speak_the_clock():
     global combined_audio
     hour, minute = update_clock()
-    audio1 = AudioSegment.from_file(os.path.join('./CN_Recordings/female',get_cn_hour_filename(hour)), format="wav")
+    audio1 = AudioSegment.from_file(os.path.join('./CN_Recordings/CN_'+gender+get_cn_hour_filename(hour)), format="wav")
     if minute != 0:
-
-        audio2 = AudioSegment.from_file(os.path.join('./CN_Recordings/female',get_cn_minute_filename(minute)), format="wav")
-
-# to combine the final audio
+        audio2 = AudioSegment.from_file(os.path.join('./CN_Recordings/CN_'+gender+get_cn_minute_filename(minute)), format="wav")
         combined_audio = audio1 + audio2
     else:
         combined_audio = audio1
@@ -210,41 +205,41 @@ def cn_fm_speak_the_clock():
 """
 This file contains code related to the language logic of time in the
 Korean.
-
-Authors: YanhuaLiao & WeixiLai
 """
 #to get hours
 def get_kn_hour_filename(hr):
+    hr,m = update_clock()
     if hr == 0:
-        return 'KN_FM_h12.wav'
+        return '/KN_'+gender+ '_h12.wav'
     elif hr < 12:
-        return f'KN_FM_h{hr}.wav'
+        return '/KN_'+gender + f'_h{hr}.wav'
     else:
-        return f'KN_FM_h{hr-12}.wav'
+        return '/KN_' +gender + f'_h{hr-12}.wav'
 
 # to get other filenames
 def get_kn_other_filename(hr):
+    hr,m = update_clock()
     if 6 <= hr < 12:
-        return "KN_FM_morning.wav"
+        return "/KN_"+gender + '_morning.wav'
     elif 12 <= hr < 18:
-        return "KN_FM_afternoon.wav"
+        return "/KN_" + gender + "_afternoon.wav"
     else:
-        return "KN_FM_evening.wav"
+        return "/KN_" + gender + "_evening.wav"
 
 #to get minutes
 def get_kn_minute_filename(m: int):
-    return f'KN_FM_m{m}.wav'
+    hr,m = update_clock()
+    return '/KN_' + gender + f'_m{m}.wav'
 
 # to speak loud in Korean
-def kn_fm_speak_the_clock():
+def kn_speak_the_clock():
     global combined_audio
     hour, minute = update_clock()
-
-    audio1 = AudioSegment.from_file('./KN_Recordings/KN_FM/KN_FM_now.wav', format="wav")
-    audio2 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_FM', get_kn_other_filename(hour)), format="wav")
-    audio3 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_FM',get_kn_hour_filename(hour)), format="wav")
-    audio4 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_FM',get_kn_minute_filename(minute)), format="wav")
-    audio5 = AudioSegment.from_file('./KN_Recordings/KN_FM/KN_FM_is.wav', format="wav")
+    audio1 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_'+gender+'/KN_'+gender+'_now.wav'), format="wav")
+    audio2 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_'+gender+get_kn_other_filename(hour)), format="wav")
+    audio3 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_'+gender+get_kn_hour_filename(hour)), format="wav")
+    audio4 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_'+gender+get_kn_minute_filename(minute)), format="wav")
+    audio5 = AudioSegment.from_file(os.path.join('./KN_Recordings/KN_'+gender+'/KN_'+gender+'_is.wav'), format="wav")
     combined_audio = audio1 + audio2 + audio3 + audio4 + audio5 
     play_combined_audio()
 
@@ -284,15 +279,35 @@ def change_timezone(event):
     
 def play_audio_for_language(language):
     global current_speed
+    global gender
     selected_language = language
-    if language == "America":
-        en_fm_speak_the_clock()
-    elif language == "China":
-        cn_fm_speak_the_clock()  
-    elif language == "Korea":
-        kn_fm_speak_the_clock()  
-    else:
-        print("Invalid language selected.")
+    selected_gender = gender_var.get()
+    
+    if selected_language == "America":
+        if selected_gender == "Male":
+            gender = "M"
+            en_speak_the_clock()
+            #return gender
+        elif selected_gender == "Female":
+            gender = "FM"
+            en_speak_the_clock()
+    if selected_language == "China":
+        if selected_gender == "Male":
+            gender = "M"
+            cn_speak_the_clock()
+            #return gender
+        elif selected_gender == "Female":
+            gender = "FM"
+            cn_speak_the_clock()
+        
+    if selected_language == "Korea":
+        if selected_gender == "Male":
+            gender = "M"
+            kn_speak_the_clock()
+            #return gender
+        elif selected_gender == "Female":
+            gender = "FM"
+            kn_speak_the_clock()
 
 time_zones = ttk.Combobox(root, values=("Local Time", "America", "Korea", "China", "Netherlands"),
                           font=("Time New Roman", 10), width=25)
@@ -303,14 +318,19 @@ time_zones.pack()
 consent_given = False
 consent_given = show_consent_form()
 
-america_button = tk.Button(root, text="America", command=lambda: play_audio_for_language("America"), bg="black", fg="grey", font=("Times New Roman", 15, "bold")) 
-america_button.pack(pady=10) 
-china_button = tk.Button(root, text="China", command=lambda: play_audio_for_language("China"), bg="black", fg="grey", font=("Times New Roman", 15, "bold")) 
-china_button.pack(pady=10) 
-korea_button = tk.Button(root, text="Korea", command=lambda: play_audio_for_language("Korea"), bg="black", fg="grey", font=("Times New Roman", 15, "bold")) 
-korea_button.pack(pady=10)
+language_label = tk.Label(root, text="Select Language:", font=("Times New Roman", 15, "bold"), background="black", foreground="white")
+language_label.pack()
+language_var = tk.StringVar()
+language_dropdown = ttk.Combobox(root, textvariable=language_var, values=("America", "China", "Korea"), font=("Times New Roman", 12))
+language_dropdown.pack(pady=5)
 
-update_clock()
+gender_label = tk.Label(root, text="Select Gender:", font=("Times New Roman", 15, "bold"), background="black", foreground="white")
+gender_label.pack()
+gender_var = tk.StringVar()
+gender_dropdown = ttk.Combobox(root, textvariable=gender_var, values=("Male", "Female"), font=("Times New Roman", 12))
+gender_dropdown.pack(pady=5)
+
+language_button = tk.Button(root, text="Play", command=lambda: play_audio_for_language(language_var.get()), bg="black", fg="grey", font=("Times New Roman", 15, "bold"))
+language_button.pack(pady=10)
 
 root.mainloop()
-
