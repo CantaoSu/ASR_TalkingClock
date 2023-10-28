@@ -18,23 +18,6 @@ from alarm import AlarmFunction
 """
 The following contains the defined functions for the basic functions of the clock
 """
-
-def change_timezone(country): 
-    country = time_zones.get()
-    now = datetime.datetime.now()
-    if country == "America":
-        ny_tz = pytz.timezone("America/New_York")
-        ny_time = now.astimezone(ny_tz)
-    if country == "Netherlands":
-        ny_tz = pytz.timezone("Europe/Amsterdam")
-        ny_time = now.astimezone(ny_tz)
-    if country == "China":
-        ny_tz = pytz.timezone("Asia/Shanghai")
-        ny_time = now.astimezone(ny_tz)
-    if country == "Korea":
-        ny_tz = pytz.timezone("Asia/Seoul")
-        ny_time = now.astimezone(ny_tz)
-    return ny_time
     
 # to show the consent form message box
 def show_consent_form():
@@ -183,7 +166,7 @@ def en_speak_the_clock():
     audio3 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_' + gender + '/'+get_en_hour_filename_en(hour,minute)), format ="wav")
     audio4 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_' + gender + '/'+get_en_ampm_filename_en(hour)), format ="wav")
     audio5 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_' + gender + '/EN_'+gender+'_12n.wav'), format ="wav")
-    audio6 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_' + gender + '/EN_'+gender+'_12n.wav'), format ="wav")
+    audio6 = AudioSegment.from_file(os.path.join('./EN_Recordings/EN_' + gender + '/EN_'+gender+'_12mn.wav'), format ="wav")
     
     if minute != 0:
         if minute == 15 or minute == 45 or minute == 30:
