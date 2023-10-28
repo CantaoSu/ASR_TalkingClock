@@ -42,12 +42,6 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 
 ## User Manual🐨
 
-## Supported languages🐇
-- English
-
-- Chinese
-
-- Korean
 
 ## Lingusitic rules for telling time🐹:
 ### English
