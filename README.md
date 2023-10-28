@@ -29,21 +29,17 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 
 ## Installation🐱
 
-First, click on the green `Code` button at the top of the repository, and then select `Download ZIP`.
+`Step 1`:click on the green `Code` button at the top of the repository, and then select `Download ZIP`.
 
-Then, xtract the contents of the downloaded ZIP file to your desired installation location on your computer.
+`Step 2`:xtract the contents of the downloaded ZIP file to your desired installation location on your computer.
 
-**If you want to run it in terminal:**
+`Step 3`:Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file（ `cd` ）.
 
-`Step 1`:Open the terminal (or command prompt, depending on your operating system) and navigate to the directory where you extracted the ZIP file（ `cd` ）.
+`Step 4`:Execute the command `pip install -r Requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
 
-`Step 2`:Execute the command `pip install -r Requirements.txt` to install the necessary dependencies. The requirements.txt file contains a list of libraries and dependencies required for the project.
+`Step 5`:Execute the command `python basic_clock.py` to run our talking clock! 
 
-`Step 3`:Execute the command `python basic_clock.py` to run our talking clock! 
 
-**If you want to run it in Jupyter:**
-
-Open Anaconda, run Jupyter Notebook, and then locate `basic_clock.ipynb` and execute it.
 
 
 ## User Manual🐨
@@ -61,7 +57,7 @@ Open Anaconda, run Jupyter Notebook, and then locate `basic_clock.ipynb` and exe
 2. Make sure you have installed the required Python resource packages.
 
 ### Daylight Saving Time Reminder
-- When you run the `basic_clock.py` (or `basic_clock.ipynb`) file, a popup window will appear, asking for your computer's time (to provide the daylight saving time reminder). You can choose "Yes" or "No" to indicate your consent.
+- When you run the `basic_clock.py` file, a popup window will appear, asking for your computer's time (to provide the daylight saving time reminder). You can choose "Yes" or "No" to indicate your consent.
 - In the main interface, you'll see the Time Window displaying the current time in your location.
 - Below the Time Window is the Daylight Saving Time Reminder Window, which will display text reminders only one day before the transition to daylight saving time.
 
