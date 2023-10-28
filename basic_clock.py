@@ -6,13 +6,15 @@ import pytz
 import datetime
 import os
 from time import strftime
+import threading
+
 import numpy as np
 from scipy.io import wavfile
 from pydub.playback import play
 from pydub import AudioSegment
 import pygame
-import threading
 import pyttsx3
+
 from alarm import AlarmFunction
 
 """
