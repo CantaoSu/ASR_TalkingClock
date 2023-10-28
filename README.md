@@ -42,6 +42,41 @@ Before you begin, make sure you have already installed `Python 3.9` or a higher 
 
 ## User Manual🐨
 
+### Table of Contents
+- [Getting Started](#getting-started)
+- [Daylight Saving Time Reminder](#daylight-saving-time-reminder)
+- [Time Zone Adjustment](#time-zone-adjustment)
+- [Voice Time Announcement](#voice-time-announcement)
+- [Clock Functionality](#clock-functionality)
+- [Alarms and To-Do List](#alarms-and-to-do-list)
+
+### Getting Started
+1. Ensure that all extracted files and folders are in the same directory.
+2. Make sure you have installed the required Python resource packages.
+
+### Daylight Saving Time Reminder
+- When you run the `main.py` file, a popup window will appear, asking for your computer's time (to provide the daylight saving time reminder). You can choose "Yes" or "No" to indicate your consent.
+- In the main interface, you'll see the Time Window displaying the current time in your location.
+- Below the Time Window is the Daylight Saving Time Reminder Window, which will display text reminders only one day before the transition to daylight saving time.
+
+### Time Zone Adjustment
+- Below the Daylight Saving Time Reminder Window, you can find the Time Zone Adjustment Window.
+- You can choose from five time zones: "Local Time," "US Time," "China Time," "Korean Time," and "Dutch Time."
+
+### Voice Time Announcement
+- Under the Time Zone Adjustment Window, there are two windows to adjust the language and gender for voice time announcements.
+- You have three language options: English, Chinese, and Korean, and you can select either a male or female voice.
+- After making your selections, click the "Play" button, and the application will announce the current time based on your chosen time zone, language, and gender.
+
+### Clock Functionality
+- The Clock Functionality displays the current time in your selected time zone.
+- Below the clock, you will find the Alarms and To-Do List sections.
+
+### Alarms and To-Do List
+- You can add and delete multiple alarms and receive voice reminders when they go off.
+- In addition, you can set to-do items by selecting "set as to-do," providing a "To-Do Message," and the application will convert your to-do items into voice announcements when the scheduled time arrives.
+
+That's it! You're all set to make the most of our Talking Clock application. Enjoy managing your time and staying organized with ease.
 
 ## Lingusitic rules for telling time🐹:
 ### English
