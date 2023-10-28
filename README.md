@@ -41,7 +41,7 @@ Then, xtract the contents of the downloaded ZIP file to your desired installatio
 
 `Step 3`:Execute the command `python basic_clock.py` to run our talking clock! 
 
-**If you want to run this file in Jupyter:**
+**If you want to run it in Jupyter:**
 
 Open Anaconda, run Jupyter Notebook, and then locate `basic_clock.ipynb` and execute it.
 
