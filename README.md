@@ -94,6 +94,8 @@ When the minute part is 0, the minutes are omitted, and only the hour part is me
 
 `Cantao Su`
 
+Participated in the overall application framework design; responsible for the daylight saving time advance reminder feature, the popup for obtaining the user's computer time; recorded audio files for the voice time announcement feature in English (male), Korean (male), and Korean (female); and adhered to Python writing conventions to refactor all code.
+
 `Weixi Lai`
 
 Participated in the discussion of the entire program design; responsible for crafting the README.md and requirements.txt files; undertaken the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls.
