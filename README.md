@@ -128,7 +128,7 @@ When the minute part is 0, the minutes are omitted, and only the hour part is me
 
 `Cantao Su`
 
-Participated in the overall application framework design; was responsible for the daylight saving time advance reminder feature; the popup for obtaining the user's computer time; recorded audio files for the voice time announcement feature in English (male), Korean (male), and Korean (female); and adhered to Python writing conventions to refactor all code.
+Participated in the overall application framework design; was responsible for the daylight saving time advance reminder feature; the popup for obtaining the user's computer time; recorded audio files for the voice time announcement feature in English (male), Korean (male), and Korean (female); and adhered to Python writing conventions to refactor all code; Editing the User Manual, Description, Technical Challenges, GDPA Compliance and Reflection on FAIR Data part of README.
 
 `Weixi Lai`
 
