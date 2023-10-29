@@ -132,7 +132,7 @@ Participated in the overall application framework design; was responsible for th
 
 `Weixi Lai`
 
-Participated in the discussion of the entire programme design; was responsible for crafting the README.md and requirements.txt files; undertook the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls.
+Participated in the entire application design and suggested adding daylight saving time reminder feature；was responsible for crafting the README.md and requirements.txt files; undertook the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls; implemented the playback function in different languages; improved a comprehensive audio file management system.
 
 `Yanhua Liao`
 
