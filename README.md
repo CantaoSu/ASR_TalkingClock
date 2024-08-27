@@ -124,28 +124,6 @@ In Korean, the format structure is as follows (in Korean, verbs always appear at
 
 When the minute part is 0, the minutes are omitted, and only the hour part is mentioned.
 
-## Team Organization and Member Contributions🐧
-
-`Cantao Su`
-
-Participated in the overall application framework design; was responsible for the daylight saving time advance reminder feature; the popup for obtaining the user's computer time; recorded audio files for the voice time announcement feature in English (male), Korean (male), and Korean (female); and adhered to Python writing conventions to refactor all code; Editing the User Manual, Description, Technical Challenges, GDPA Compliance and Reflection on FAIR Data part of README.
-
-`Weixi Lai`
-
-Participated in the entire application design and suggested adding daylight saving time reminder feature；was responsible for crafting the README.md and requirements.txt files; undertook the code writing for the English language section, and achieved gender switching for all languages without any code redundancy by implementing gender variable support and function calls; implemented the playback function in different languages; improved a comprehensive audio file management system.
-
-`Yanhua Liao`
-
-Participated in discussion of the overall team project design and architecture; responsible for the recording of Chinese and English female voices; responsible for the code writing of Korean and Chinese language sections, as well as the code writing of the gender change option section.
-
-`Yinqiu Wang`
-
-Participated in discussion of the overall team project design and architecture; responsible for the implementation of the time zone conversion function, local time retrieval function, language switching function implementation, and corresponding GUI functionality implementation.
-
-`Ziyun Zhang`
-
-Participated in the discussion of the entire program design; responsible for the implementation of the alarm clock function and the coding of the layout of the alarm clock in the GUI interface.
-
 ## Technical Challenges🐰
 
 ### Integration of Functionalities and Language Implementations
